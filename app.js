@@ -6,7 +6,10 @@ var port = process.env.PORT || 2345;
 
 // Home
 app.get('/', function(req, res) {
-	res.json({ message: 'hooray! welcome to our api!' });
+	res.json({
+    app: 'Busbud Autocomplete',
+    author: 'Christophe Naud-Dulude'
+  });
 });
 
 // Suggestions API
